@@ -1,13 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-// First attempt: failed
-// export default class Logo extends React.Component {
-//   render() {
-//     return <img src='./logo.svg'></img>
-//   }
-// }
 
 export default class Logo extends React.Component {
   render() {
