@@ -1,8 +1,17 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+// First attempt: failed
+// export default class Logo extends React.Component {
+//   render() {
+//     return <img src='./logo.svg'></img>
+//   }
+// }
+
+export default class Logo extends React.Component {
+  render() {
+    return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +29,6 @@ function App() {
       </header>
     </div>
   );
-}
+}}
 
-export default App;
+// export default Logo;
