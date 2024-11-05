@@ -18,18 +18,16 @@ class Post extends Component {
             <div>
                 {/* Add 32x32 profile image to match instagram.com mobile view */}
                 <img src="https://placehold.co/32"></img>
-                <div>
-                    <h3>username</h3>
-                    <h4>location</h4>
-                </div>
-                <FontAwesomeIcon icon={faEllipsis} class="interact" />
+                <h3>username</h3>
+                <h4>location</h4>
+                <FontAwesomeIcon icon={faEllipsis} class="interact ellipsis" />
             </div>
             <img src="https://placehold.co/400" alt="Placeholder image" />
             <div>
                 <div>
                     <FontAwesomeIcon icon={faHeart} class="interact" />
                     {/* <p></p> */}
-                    <FontAwesomeIcon icon={faComment} class="interact" />
+                    <FontAwesomeIcon icon={faComment} class="interact comment" />
                     {/* <p></p> */}
                     <FontAwesomeIcon icon={faPaperPlane} class="interact" />
                     {/* <p></p> */}

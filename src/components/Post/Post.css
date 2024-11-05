@@ -20,30 +20,58 @@ h3, h4, p, .interact {
     color: var(--text-color);
 }
 
+/* CSS Grid for top user info section */
 #post-wrap > div:first-child {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 14px 4px 8px 12px;
 }
 
 #post-wrap > img {
-    display: block;
+    max-width: 100vw;
+    height: auto;
 }
 
 #post-wrap > div:first-child > img {
     /* border-radius: 50%; */
     /* below works much better with a square image! */
     clip-path: circle();
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
 }
 
 h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     font-size: 14px;
     font-family: var(--font-family-system);
     font-weight: 400;
+    justify-self: start;
+    align-self: end;
+    margin: 0 0 0 0;
 }
 
 h4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     font-size: 12px;
     font-family: var(--font-family-system);
     font-weight: 400;
+    justify-self: start;
+    align-self: start;
+    margin: 0 0 0 0;
+}
+
+.ellipsis {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
 }
 
 .interact {
@@ -55,5 +83,10 @@ h4 {
 #post-wrap > div:last-child {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 8px;
+}
+
+.comment {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
