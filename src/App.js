@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Post from './Post.js';
 
 export default class Logo extends React.Component {
   render() {
